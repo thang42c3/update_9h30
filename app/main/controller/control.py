@@ -55,7 +55,7 @@ def table():
         for list in lists:
             for i in range(0, len(lists)):
                 min_value_list.append(
-                    abs(datetime.strptime(lists[i][0] + ":00", '%H:%M:%S') - datetime.strptime('09:30:00', '%H:%M:%S')))
+                    abs(datetime.strptime(lists[i][0] + ":00", '%H:%M:%S') - datetime.strptime('10:00:00', '%H:%M:%S')))
 
         min_value = min(min_value_list)
         index = min_value_list.index(min_value)
