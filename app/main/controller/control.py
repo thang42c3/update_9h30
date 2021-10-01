@@ -18,7 +18,7 @@ from app import app
 def table():
     today = date.today()
 
-    myclient = pymongo.MongoClient("mongodb+srv://ducthangbnn:Oivung1215@cluster0.1rpru.mongodb.net/test",
+    myclient = pymongo.MongoClient("mongodb+srv://ducthangbnn:Oivung1215@cluster0.1rpru.mongodb.net/test?ssl=true&ssl_cert_reqs=CERT_NONE",
                                    connect=False)
     mydb = myclient["stocks"]
     mycol = mydb["price_9h_30_ex"]
